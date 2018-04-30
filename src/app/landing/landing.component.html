@@ -1,0 +1,8 @@
+<p>Enter your details to store in shared service and access it in other pages</p>
+<div>
+    <input type="text" [(ngModel)]="_username" placeholder="Enter name" />
+    <input type="number" [(ngModel)]="_age" placeholder="Enter your age" />
+    <button (click)="save(_username, _age)">Save</button>
+</div>
+
+<app-counter [counter]=5></app-counter>
